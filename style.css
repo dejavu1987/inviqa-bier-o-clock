@@ -1,0 +1,123 @@
+body {
+  text-align: center;
+  background: #eee;
+  font-family: sans-serif;
+  font-weight: 100;
+  font-family: DM Sans, Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body:before {
+  background-color: #4fffc8;
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  transform: translateX(-50%);
+  min-width: 100vw;
+  z-index: -1;
+}
+body:after {
+  content: '';
+  display: block;
+  position: absolute;
+  mask-position: bottom;
+  bottom: 0;
+  left: 50%;
+  height: 100%;
+  transform: translateX(-50%);
+  min-width: 100vw;
+  z-index: -1;
+  background-size: 16rem;
+  background-image: none;
+  background-color: #fff;
+  -webkit-mask: url(https://inviqa.com/themes/custom/inviqa/dist/images/svg/houndstooth.svg);
+  -webkit-mask-repeat: repeat-x;
+  -webkit-mask-size: 10rem;
+  -webkit-mask-position: center calc(100% + 3.8rem);
+  mask: url(https://inviqa.com/themes/custom/inviqa/dist/images/svg/houndstooth.svg);
+  mask-repeat: repeat-x;
+  mask-size: 10rem;
+  mask-position: center calc(100% + 3.8rem);
+}
+
+p,
+#message {
+  font-size: 2rem;
+}
+
+h1 {
+  font-weight: 100;
+  font-size: 5vw;
+  margin: 0;
+  color: #fff;
+  padding: 25px 0 5px;
+}
+
+hr {
+  margin-bottom: 25px;
+}
+
+#clockdiv {
+  font-family: 'Orbitron', sans-serif;
+  color: #fff;
+  display: inline-block;
+  font-weight: 100;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 2rem;
+}
+
+#clockdiv > div {
+  padding: 10px;
+  border: 0.5rem solid #fff;
+  border-radius: 3px;
+  background: #fdf413;
+  display: inline-block;
+  text-shadow: 4px 4px 0.3em #000;
+}
+
+#clockdiv div > span {
+  padding: 5vh;
+  border-radius: 3px;
+  display: inline-block;
+  line-height: 20vh;
+  height: 20vh;
+  font-size: 20vh;
+  width: 35vh;
+  text-align: center;
+}
+
+.smalltext {
+  padding-top: 5px;
+  font-size: 8vh;
+}
+body.red h1,
+body.red #clockdiv span {
+  animation: blink 1s infinite;
+}
+
+@-webkit-keyframes blink {
+  0%,
+  24% {
+    background-color: rgb(117, 209, 63);
+    border: 3px solid #e50000;
+  }
+  25%,
+  49% {
+    background-color: rgb(17, 09, 243);
+    border: 3px solid #e50000;
+  }
+  50%,
+  74% {
+    background-color: rgb(217, 9, 63);
+    border: 3px solid #e50000;
+  }
+  75%,
+  100% {
+    background-color: #e50000;
+    border: 3px solid rgb(217, 209, 63);
+  }
+}
