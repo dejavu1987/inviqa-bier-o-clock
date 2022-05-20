@@ -40,6 +40,9 @@ function initializeClock(id, endtime) {
       msg.innerHTML = "It's Bier O' Clock!";
       document.body.style.color = 'red';
       document.body.className = 'red';
+      if (today.getHours() >= 17) {
+        window.toggleConfetti(true);
+      }
       clearInterval(timeinterval);
     }
   }
@@ -57,7 +60,3 @@ console.log(time);
 var deadline = new Date(+new Date() + time * 1000);
 
 initializeClock('clockdiv', deadline);
-
-if (today.getHours() >= 17) {
-  window.toggleConfetti(true);
-}
