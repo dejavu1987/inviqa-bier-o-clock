@@ -57,3 +57,7 @@ console.log(time);
 var deadline = new Date(+new Date() + time * 1000);
 
 initializeClock('clockdiv', deadline);
+
+if (today.getHours() >= 17) {
+  window.toggleConfetti(true);
+}

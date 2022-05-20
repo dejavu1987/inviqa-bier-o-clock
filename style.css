@@ -33,11 +33,11 @@ body:after {
   background-size: 16rem;
   background-image: none;
   background-color: #fff;
-  -webkit-mask: url(https://inviqa.com/themes/custom/inviqa/dist/images/svg/houndstooth.svg);
+  -webkit-mask: url(houndstooth.svg);
   -webkit-mask-repeat: repeat-x;
   -webkit-mask-size: 10rem;
   -webkit-mask-position: center calc(100% + 3.8rem);
-  mask: url(https://inviqa.com/themes/custom/inviqa/dist/images/svg/houndstooth.svg);
+  mask: url(houndstooth.svg);
   mask-repeat: repeat-x;
   mask-size: 10rem;
   mask-position: center calc(100% + 3.8rem);
